@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "448428813155",
+    "firebase_url": "https://stunning-agency-150608.firebaseio.com",
+    "project_id": "stunning-agency-150608",
+    "storage_bucket": "stunning-agency-150608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448428813155:android:49cd1b566222c4f0",
+        "android_client_info": {
+          "package_name": "com.qbee.clickcounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448428813155-1c3t36is84ou87tc00idnc8h42kkjoal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD--1iGsTjUOj_CqpLnh1CYv4gpk885QKY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
