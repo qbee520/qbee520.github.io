@@ -1,0 +1,17 @@
+{
+  "tv_info": [
+    {
+      "type": "LIVE",
+      "title": "中天新聞",
+      "id": "oIgbl7t0S_w",
+      "thumbnail": "https://i.ytimg.com/vi/_QbRXRnHMVY/hqdefault_live.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcZ2djMkpPKIp4xbmlqUQAloqINw"
+    },{
+      "type": "LIVE",
+      "title": "東森新聞 CH51",
+      "id": "LuQ4S-i5zoE",
+      "thumbnail": "https://i.ytimg.com/vi/LuQ4S-i5zoE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4ALgM7x0Qgn1a75yGr-QCmMe2kw"
+    }
+  ],
+  
+  "configuration_version": "1"
+}
