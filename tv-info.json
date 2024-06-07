@@ -1,6 +1,13 @@
 {
   "tv_version": "0.1",
-  
+  "tv_pre_channel": [
+    {
+      "type": 0,
+      "title": "壹電視NEXT TV",
+      "id": "P-0tkGy7iKk",
+      "thumbnail": "https://i.ytimg.com/vi/P-0tkGy7iKk/hqdefault_live.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDeuqFB7cwGCJPEJ1bM0vzTQ7gdEg"
+    }
+  ],
   "tv_info": [
     {
       "type": 0,
