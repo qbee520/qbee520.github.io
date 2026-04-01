@@ -1,125 +1,665 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1" >
+<html lang="zh-TW">
 <head>
-<title>Qbee520 - Android apps developer</title>
-<style type="text/css">
-a:link {text-decoration: none}
-a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
-a:active {text-decoration: none;}
-tr:hover {background-color: #ececec;}
-tr:active {background-color: #cdcdcd;}
-.item-box{
-        width:100%;
-		padding: 0px;
-	}
-    .icon-td{
-		width: 60px;
-		height: 60px;
-	}
-    .icon-btn{
-		width: 40px;
-		height: 40px;
-        padding: 10px;
-	}
-	.store-btn{
-		width: 120px;
-		height: 40px;
-	}
-    .header-title{
-		color:#232323;
-        font-weight: bold;
-        font-size: large;
-	}
-    .content-text{
-		color:#565656;
-        font-size:medium;
-	}
-
-</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6128175269142966"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="財經小Q的投資筆記 - 分享投資理財、股票分析、ETF投資、存股心得與財經知識。財經小Q帶你掌握台股ETF、高股息投資、定期定額策略，邁向財務自由之路。">
+    <meta name="keywords" content="財經小Q, 財經小Q的投資筆記, 投資理財, 股票分析, ETF投資, 高股息, 存股, 被動收入, 財務自由, 台股ETF, 0050, 00878, 00919, 台積電">
+    <meta name="author" content="財經小Q">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://qbee520.github.io/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qbee520.github.io/">
+    <meta property="og:title" content="財經小Q的投資筆記 | 投資理財・股票分析・ETF投資">
+    <meta property="og:description" content="財經小Q帶你掌握投資理財知識，深入分析台股ETF、高股息投資策略，透過定期定額與複利效應，邁向財務自由之路。">
+    <meta property="og:image" content="https://qbee520.github.io/image/favicon.ico">
+    <meta property="og:site_name" content="財經小Q的投資筆記">
+    <meta property="og:locale" content="zh_TW">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://qbee520.github.io/">
+    <meta name="twitter:title" content="財經小Q的投資筆記 | 投資理財・股票分析・ETF投資">
+    <meta name="twitter:description" content="財經小Q帶你掌握投資理財知識，深入分析台股ETF、高股息投資策略，邁向財務自由之路。">
+    
+    <title>財經小Q的投資筆記 | 投資理財・股票分析・ETF投資</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    
+    <!-- JSON-LD 結構化資料 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "財經小Q的投資筆記",
+        "alternateName": ["財經小Q", "Qbee520 財經筆記"],
+        "url": "https://qbee520.github.io/",
+        "description": "財經小Q的投資筆記 - 分享投資理財、股票分析、ETF投資、存股心得與財經知識",
+        "inLanguage": "zh-TW",
+        "publisher": {
+            "@type": "Person",
+            "name": "財經小Q",
+            "url": "https://qbee520.github.io"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "財經小Q",
+        "alternateName": "Qbee520",
+        "url": "https://qbee520.github.io/",
+        "description": "財經小Q是一位專注於投資理財、ETF分析的財經部落客，分享股票投資、高股息ETF、定期定額等投資策略。",
+        "sameAs": [
+            "https://www.youtube.com/@qbee.520",
+            "https://qbee520.github.io"
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "財經小Q的投資筆記",
+        "url": "https://qbee520.github.io/",
+        "description": "分享投資理財、股票分析、ETF投資、存股心得與財經知識",
+        "inLanguage": "zh-TW",
+        "author": {
+            "@type": "Person",
+            "name": "財經小Q"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "財經小Q"
+        }
+    }
+    </script>
+    
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft JhengHei", "PingFang TC", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a5f2a 0%, #2d8a3e 50%, #3da552 100%);
+            color: white;
+            padding: 2px 2px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 1.75em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 0.85em;
+            margin-top: 2px;
+            opacity: 0.95;
+        }
+        
+        .nav-bar {
+            background-color: #fff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-bar a {
+            color: #1a5f2a;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .nav-bar a:hover {
+            color: #3da552;
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        .welcome-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .welcome-section h2 {
+            color: #1a5f2a;
+            border-bottom: 3px solid #3da552;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .welcome-section p {
+            color: #565656;
+            font-size: 16px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 5px solid #2d8a3e;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+        
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .category-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .article-thumbnail {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2px;
+        }
+        
+        .category-card h3 {
+            color: #1a5f2a;
+            margin: 10px 0;
+        }
+        
+        .category-card p {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .category-card .article-date {
+            font-size: 12px;
+            color: #888;
+            margin-top: 2px;
+        }
+        
+        .coming-soon {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .coming-soon h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: nowrap;
+        }
+        
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            white-space: nowrap;
+        }
+        
+        .social-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .social-btn.youtube {
+            background: #ff0000;
+            color: white;
+        }
+        
+        .social-btn.googleplay {
+            background: #01875f;
+            color: white;
+        }
+        
+        .social-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        
+        .disclaimer {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #6c757d;
+        }
+        
+        .disclaimer h4 {
+            color: #495057;
+            margin-top: 0;
+        }
+        
+        .footer {
+            background: #1a5f2a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        
+        .footer a {
+            color: #a5d6a7;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .stats-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2d8a3e;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .header {
+                padding: 2px 2px;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .header .subtitle {
+                font-size: 0.6em;
+                white-space: nowrap;
+            }
+            
+            .nav-bar {
+                white-space: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .nav-bar a {
+                display: inline;
+                margin: 0 8px;
+                font-size: 0.9em;
+            }
+            
+            .categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-links {
+                gap: 10px;
+            }
+            
+            .social-btn {
+                padding: 10px 15px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
 </head>
 <body>
-<center>
-<h1>Qbee520</h1>
-<h3>An Android apps developer.</h3>
-<a href='https://play.google.com/store/search?q=qbee520&c=apps' style="padding:0px" target="_blank">
-<img alt='Get it on Google Play' class="store-btn"
-src='image/google_play.png' /></a></center>
+    <div class="header">
+        <h1>財經小Q的投資筆記</h1>
+        <p class="subtitle">投資理財 ・ 股票分析 ・ ETF投資 ・ 財務自由之路</p>
+    </div>
+    
+    <div class="nav-bar">
+        <a href="/">🏠 首頁</a>
+        <a href="#latest-articles">📝 最新文章</a>
+        <a href="about-tw.html">👤 關於我們</a>
+        <a href="privacy-policy-tw.html">🔒 隱私權政策</a>
+        <a href="https://www.youtube.com/@qbee.520" target="_blank"><img src="https://www.youtube.com/favicon.ico" alt="YouTube" style="height: 1em; vertical-align: middle;"> 財經小Q</a>
+        <a href="javascript:void(0)" onclick="sharePage()">🔗 分享</a>
+    </div>
+    
+    <div class="container">
+        <section class="welcome-section" id="about">
+            <h2>👋 歡迎來到財經小Q的投資筆記</h2>
+            <p>
+                大家好，我是 <strong>財經小Q</strong>！這裡是我分享投資理財心得的小天地。
+            </p>
+            <p>
+                身為一個軟體工程師，我深信「<strong>讓金錢為你工作</strong>」的理念。在這個部落格中，
+                我將分享自己在投資道路上的學習筆記、市場觀察、以及實際的投資經驗。
+                無論你是剛開始接觸理財的新手，還是有經驗的投資人，都希望這裡的內容能對你有所幫助。
+            </p>
+            
+            <div class="highlight-box">
+                <strong>💡 投資理念：</strong>
+                <ul style="margin: 10px 0 0 0; padding-left: 20px;">
+                    <li>長期投資，穩健獲利</li>
+                    <li>分散風險，不把雞蛋放同一個籃子</li>
+                    <li>持續學習，了解自己投資的標的</li>
+                    <li>紀律執行，不被市場情緒影響</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="latest-articles">
+            <h2 style="color: #1a5f2a; text-align: center;">📝 最新文章</h2>
+            <div class="categories">
+                <a href="fq/20260212-0052.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/4gFO1HE-fws/mqdefault.jpg" alt="0052 富邦科技 ETF 深度解析" class="article-thumbnail">
+                    <h3>0052 富邦科技 ETF 深度解析：台積電集中策略下的科技成長利器</h3>
+                    <p>台積電佔比超過七成，涵蓋半導體與AI產業鏈龍頭，低管理成本與長期高報酬的科技ETF完整分析</p>
+                    <p class="article-date">📅 2026/02/12</p>
+                </a>
+                
+                <a href="fq/20260212-stable.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/JkDtdy-xAGg/mqdefault.jpg" alt="穩定幣引爆全球貨幣角力" class="article-thumbnail">
+                    <h3>穩定幣引爆全球貨幣角力：美元霸權新武器與各國數位主權戰略</h3>
+                    <p>USDT與USDC主導市場鞏固美元霸權，亞歐各國積極研發數位貨幣應對，跨國支付革命全面展開</p>
+                    <p class="article-date">📅 2026/02/12</p>
+                </a>
+                
+                <a href="fq/20260211-7769.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/zbn9BpiaeWc/mqdefault.jpg" alt="鴻勁（7769）半導體設備龍頭" class="article-thumbnail">
+                    <h3>鴻勁（7769）半導體設備龍頭：CoWoS先進封裝與AI晶片的關鍵供應商</h3>
+                    <p>SoC分選機與ATC溫控系統高市佔率，切入CoWoS先進封裝與AI晶片供應鏈，矽光子CPO技術啟動</p>
+                    <p class="article-date">📅 2026/02/11</p>
+                </a>
+                
+                <a href="fq/20260210-top1.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/krr-pmfOZJE/mqdefault.jpg" alt="頂尖富豪的六大致富心理準則" class="article-thumbnail">
+                    <h3>頂尖富豪的六大致富心理準則：改變思維模式，實現持續財務成長</h3>
+                    <p>探討頂尖富豪與一般人的核心思維差異，掌握長期視角、系統化思考、數據決策等六大準則</p>
+                    <p class="article-date">📅 2026/02/10</p>
+                </a>
+                
+                <a href="fq/20260209-00981a.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/eAxWKQmxvaM/mqdefault.jpg" alt="00981A 統一台股增長 ETF" class="article-thumbnail">
+                    <h3>00981A 統一台股增長 ETF：年配改季配息，AI 成長股主動操盤追求超額報酬</h3>
+                    <p>陳釧瑤操盤主動型 ETF，專注 AI 供應鏈成長股，免稅資本利得配息優化稅務成本</p>
+                    <p class="article-date">📅 2026/02/09</p>
+                </a>
+                
+                <a href="fq/20260208-miniretirement.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/tmAyGvsmQ9k/mqdefault.jpg" alt="微退休 Mini-Retirement" class="article-thumbnail">
+                    <h3>微退休時代來了！拆解傳統退休，穿插職涯的全新人生策略</h3>
+                    <p>過半台灣人想嘗試微退休，最理想時機約50歲，每次預算門檻約730萬元</p>
+                    <p class="article-date">📅 2026/02/08</p>
+                </a>
+                
+                <a href="fq/20260208-0050.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/jP4WcKwStI4/mqdefault.jpg" alt="過年抱股攻略 0050 vs 0056" class="article-thumbnail">
+                    <h3>過年抱股攻略：0050 vs 0056 春節持股對策</h3>
+                    <p>市值型與高股息ETF長線報酬比較，投資決策回歸個人目標，安心抱股快樂過年</p>
+                    <p class="article-date">📅 2026/02/08</p>
+                </a>
+                
+                <a href="fq/20260204-00708l.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/1ZWmHbSeaZg/mqdefault.jpg" alt="00708L 期元大S&P黃金正2" class="article-thumbnail">
+                    <h3>00708L 期元大S&P黃金正2：單日兩倍報酬的黃金槓桿ETF</h3>
+                    <p>透過黃金期貨達成單日兩倍報酬，無漲跌幅限制與每日重設曝險，高波動風險詳解</p>
+                    <p class="article-date">📅 2026/02/04</p>
+                </a>
+                
+                <a href="fq/20260203-009816.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/ZCg65GAaN_k/mqdefault.jpg" alt="009816 凱基台灣TOP50 掛牌首日" class="article-thumbnail">
+                    <h3>009816 凱基台灣TOP50 掛牌首日：不配息版0050爆量登場</h3>
+                    <p>股利自動再投入省稅省健保，市值+獲利雙篩選，複利成長長期投資首選</p>
+                    <p class="article-date">📅 2026/02/03</p>
+                </a>
+                
+                <a href="fq/20260202-00878.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/zgw9R4nxPNg/mqdefault.jpg" alt="00878 國泰永續高股息ETF" class="article-thumbnail">
+                    <h3>00878 國泰永續高股息ETF 除息前深度解析</h3>
+                    <p>2/26除息配發0.42元，百萬股民擁護的市場龍頭，穩定季配息攻守兼備</p>
+                    <p class="article-date">📅 2026/02/02</p>
+                </a>
+                
+                <a href="fq/20260202-fed.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/kh-zKusIg6E/mqdefault.jpg" alt="Fed聯準會利率決策" class="article-thumbnail">
+                    <h3>Fed聯準會利率決策深度解析</h3>
+                    <p>掌握貨幣政策對投資的影響，了解升息降息的市場效應</p>
+                    <p class="article-date">📅 2026/02/02</p>
+                </a>
+                
+                <a href="fq/20260201-00830.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/OHY2-q7Y2Hs/mqdefault.jpg" alt="00830 國泰費城半導體ETF" class="article-thumbnail">
+                    <h3>00830 國泰費城半導體ETF 深度解析</h3>
+                    <p>掌握半導體產業投資機會，一次佈局全球半導體龍頭</p>
+                    <p class="article-date">📅 2026/02/01</p>
+                </a>
+                
+                <a href="fq/20260128-2330.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/2NUPEHciMVA/mqdefault.jpg" alt="台積電投資策略" class="article-thumbnail">
+                    <h3>台積電(2330)創新高後的投資策略</h3>
+                    <p>股價創1820元新高，目標價上看3030元，AI需求與CoWoS技術加持下的布局思維</p>
+                    <p class="article-date">📅 2026/01/28</p>
+                </a>
+                
+                <a href="fq/20260126-0050.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/T217Y88vtQ4/mqdefault.jpg" alt="0050 元大台灣50 ETF" class="article-thumbnail">
+                    <h3>0050 元大台灣50 ETF 財務自由攻略</h3>
+                    <p>定期定額達成千萬目標，複利效應的強大威力，科學化數據分析財務自由藍圖</p>
+                    <p class="article-date">📅 2026/01/26</p>
+                </a>
+                
+                <a href="fq/20260125-00919.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/9K7RHeHGBo0/mqdefault.jpg" alt="00919 群益台灣精選高息ETF" class="article-thumbnail">
+                    <h3>00919 群益台灣精選高息ETF 深度解析</h3>
+                    <p>10.62%高配息率、114%累積總報酬，122萬投資人的被動收入首選</p>
+                    <p class="article-date">📅 2026/01/25</p>
+                </a>
+                
+                <a href="fq/20260124-0056.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/BF1PJTamedk/mqdefault.jpg" alt="0056 元大高股息ETF" class="article-thumbnail">
+                    <h3>0056 元大高股息ETF 深度解析</h3>
+                    <p>連續18年穩定配息的國民ETF，預測型選股邏輯獨樹一格，152萬投資人青睞</p>
+                    <p class="article-date">📅 2026/01/24</p>
+                </a>
+                
+                <a href="fq/20260121-0050.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/t5Q5D4u8R5s/mqdefault.jpg" alt="0050 持續買進投資心法" class="article-thumbnail">
+                    <h3>0050 投資心法：《持續買進》理論實踐</h3>
+                    <p>「沒買」才是最大風險，定期定額克服人性恐懼，耐心長期持有才是資產累積關鍵</p>
+                    <p class="article-date">📅 2026/01/21</p>
+                </a>
+                
+                <a href="fq/20260119-00937b.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/WlYUCV05g3o/mqdefault.jpg" alt="00937B 群益ESG投等債20+ ETF" class="article-thumbnail">
+                    <h3>00937B 群益ESG投等債20+ ETF：月配息打造第二份薪水</h3>
+                    <p>結合ESG永續、BBB級投資級公司債與20年期長天期債券，27萬受益人的穩定現金流首選</p>
+                    <p class="article-date">📅 2026/01/19</p>
+                </a>
+                
+                <a href="fq/20260119-00738u.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/FBR-UHIbEck/mqdefault.jpg" alt="00738U 元大道瓊白銀ETF" class="article-thumbnail">
+                    <h3>00738U 元大道瓊白銀ETF：散戶熱衷的白銀投資工具</h3>
+                    <p>追蹤道瓊白銀指數，透過COMEX期貨模擬銀價走勢，避險與工業應用雙重價值</p>
+                    <p class="article-date">📅 2026/01/19</p>
+                </a>
+                
+                <a href="fq/20260117-vt.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/zghQwoEF1fM/mqdefault.jpg" alt="VT Vanguard全世界股票ETF" class="article-thumbnail">
+                    <h3>VT Vanguard全世界股票ETF：一檔掌握全球市場的終極懶人投資法</h3>
+                    <p>追蹤富時全球全市場指數，涵蓋47國近萬檔股票，管理費僅0.06%，打造抗通膨退休金</p>
+                    <p class="article-date">📅 2026/01/17</p>
+                </a>
+                
+                <a href="fq/20260115-2330.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/Gv7r9R4wcQU/mqdefault.jpg" alt="2026年初台積電法說會" class="article-thumbnail">
+                    <h3>2026年初台積電法說會：AI需求強勁，資本支出上調至520-560億美元</h3>
+                    <p>2025年Q4業績亮眼，重點投入2奈米與A16先進製程，魏哲家強調AI需求真實強勁</p>
+                    <p class="article-date">📅 2026/01/15</p>
+                </a>
+                
+                <a href="fq/20260108-00631l.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/P8jeAPG0lMQ/mqdefault.jpg" alt="00631L 元大台灣50正2" class="article-thumbnail">
+                    <h3>00631L 元大台灣50正2：槓桿ETF的複利奇蹟與股票分割新契機</h3>
+                    <p>十年驚人績效揭密，期貨轉倉逆價差優勢，三月底股票分割降低門檻，50%正2配置策略</p>
+                    <p class="article-date">📅 2026/01/08</p>
+                </a>
+                
+                <a href="fq/20260107-009816.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/z8QvdjWfFP4/mqdefault.jpg" alt="009816 凱基台灣TOP50 ETF" class="article-thumbnail">
+                    <h3>009816 凱基台灣TOP50 ETF：台灣首檔不配息市值型ETF的複利革命</h3>
+                    <p>股利自動滾入複利成長，節省二代健保與所得稅，動能加碼策略搭配10元發行價</p>
+                    <p class="article-date">📅 2026/01/07</p>
+                </a>
+                
+                <a href="fq/20260106-00981a.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/08WcIgzc1Rc/mqdefault.jpg" alt="00981A 統一台股增長 ETF套娃" class="article-thumbnail">
+                    <h3>00981A 統一台股增長：ETF套娃現象揭密｜主動式ETF如何突破持股限制？</h3>
+                    <p>主動式ETF持有0050與0052間接拉高台積電佔比，突破單一個股10%權重限制的靈活策略</p>
+                    <p class="article-date">📅 2026/01/06</p>
+                </a>
+                
+                <a href="fq/20260105-0052.html" class="category-card">
+                    <img src="https://img.youtube.com/vi/KUItpjH8eyE/mqdefault.jpg" alt="0052 富邦科技ETF" class="article-thumbnail">
+                    <h3>0052 富邦科技ETF：台積電佔比超過七成，大盤破三萬點的科技投資利器</h3>
+                    <p>台積電創歷史新高帶動大盤突破三萬點，富邦科技ETF淨值同步刷新，成分股與指數規則解析</p>
+                    <p class="article-date">📅 2026/01/05</p>
+                </a>
+            </div>
+        </section>
 
-
-<hr />
-<a href='https://play.google.com/store/apps/details?id=com.qbee.clock' style="padding:0px" target="_blank">
-<table class="item-box">
-    <tr><td class="icon-td"><img class="icon-btn" src='image/icon_clock.png' /></td>
-        <td>
-        <div class="header-title">Classic Clock - with second hand</div>
-        <div class="content-text">A Simple Classic Clock with second hand.</div>
-    </td></tr>
-</table></a>
-
-<hr />
-<a href='https://play.google.com/store/apps/details?id=com.qbee.clickcounter' style="padding:0px" target="_blank">
-<table class="item-box">
-    <tr><td class="icon-td"><img class="icon-btn" src='image/icon_click.png' /></td>
-        <td>
-        <div class="header-title">Click Counter Free</div>
-        <div class="content-text">A simple counter, free and easy.</div>
-    </td></tr>
-</table></a>
-
-<hr />
-<a href='https://play.google.com/store/apps/details?id=com.qbee.pedometer2' style="padding:0px" target="_blank">
-<table class="item-box">
-    <tr><td class="icon-td"><img class="icon-btn" src='image/icon_pedometer.png' /></td>
-        <td>
-        <div class="header-title">Pedometer, step counter - free</div>
-        <div class="content-text">Daily step counter which uses the step-sensor for minimal battery consumption</div>
-    </td></tr>
-</table></a>
-
-<hr />
-<a href='https://play.google.com/store/apps/details?id=com.qbee.luckynumber' style="padding:0px" target="_blank">
-<table class="item-box">
-    <tr><td class="icon-td"><img class="icon-btn" src='image/icon_lucky.png' /></td>
-        <td>
-        <div class="header-title">Lucky Numbers - Lottery</div>
-        <div class="content-text">Determine you Lucky Numbers using this app</div>
-    </td></tr>
-</table></a>
-
-<hr />
-<a href='https://play.google.com/store/apps/details?id=com.qbee.bloodglucose' style="padding:0px" target="_blank">
-<table class="item-box">
-    <tr><td class="icon-td"><img class="icon-btn" src='image/icon_sugar.png' /></td>
-        <td>
-        <div class="header-title">Blood Sugar Tracker (big font)</div>
-        <div class="content-text">Daily blood sugar level record, large font and easy</div>
-    </td></tr>
-</table></a>
-
-<hr />
-<a href='https://play.google.com/store/apps/details?id=com.qbee.lotterytw' style="padding:0px" target="_blank">
-<table class="item-box">
-    <tr><td class="icon-td"><img class="icon-btn" src='image/icon_lottery.png' /></td>
-        <td>
-        <div class="header-title">樂透選號 - 台灣彩券「威力彩」、「大樂透」選號產生器 - 完全免費</div>
-        <div class="content-text">個人專屬的樂透選號產生器，台灣彩券「威力彩、大樂透、今彩539、雙贏彩、BINGO BINGO賓果賓果、3星彩、4星彩」選號的最佳利器 - 完全免費</div>
-    </td></tr>
-</table></a>
-
-<hr />
-<a href='https://play.google.com/store/apps/details?id=com.qbee.mytv' style="padding:0px" target="_blank">
-<table class="item-box">
-    <tr><td class="icon-td"><img class="icon-btn" src='image/icon_tv.png' /></td>
-        <td>
-        <div class="header-title">行動電視 - 台灣新聞台</div>
-        <div class="content-text">簡單的行動網路電視應用，連結 Youtube 直播，完全無廣告</div>
-    </td></tr>
-</table></a>
-
-
-<hr />
-<br>
+        <div class="coming-soon">
+            <h3>🚀 更多精彩內容持續更新中</h3>
+            <p>更多 ETF 分析、存股心得、投資策略即將推出！</p>
+            <p style="margin-top: 15px; font-size: 14px; color: #666;">
+                訂閱我的 YouTube 頻道，搶先獲得最新內容通知 👇
+            </p>
+        </div>
+        
+        <section id="contact">
+            <div class="social-links">
+                <a href="https://www.youtube.com/@qbee.520" target="_blank" class="social-btn youtube">
+                    📺 YouTube 頻道
+                </a>
+            </div>
+        </section>
+        
+        <div class="disclaimer">
+            <h4>⚠️ 免責聲明</h4>
+            <p>
+                本部落格所有內容僅供參考，不構成任何投資建議。投資有風險，入市需謹慎。
+                讀者應根據自身財務狀況和風險承受能力，自行判斷是否進行投資。
+                作者不對任何因參考本站內容而產生的投資損失負責。
+            </p>
+            <p>
+                文章中提及的個股或金融商品，僅為分析討論之用，並非推薦買賣。
+                投資前請務必做好功課，或諮詢專業的財務顧問。
+            </p>
+        </div>
+    </div>
+    
+    <!-- 訪客計數器 -->
+    <div style="text-align: center; margin: 20px 0; padding: 15px;">
+        <p style="color: #565656; font-size: 14px;">
+            👁️ 訪客人數: 
+            <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fqbee520.github.io%2F&label=&countColor=%231a5f2a" alt="Visitor Count" style="vertical-align: middle;">
+        </p>
+    </div>
+    
+    <div class="footer">
+        <p><strong>© 2025-2026 財經小Q的投資筆記</strong></p>
+        <p>
+            <a href="index_tw.html">Android開發首頁</a> | 
+            <a href="about-tw.html">關於我們</a> | 
+            <a href="privacy-policy-tw.html">隱私權政策</a> | 
+            <a href="contact.html">聯絡我們</a>
+        </p>
+    </div>
+    
+    <script>
+    function sharePage() {
+        const title = document.title;
+        const url = window.location.href;
+        
+        if (navigator.share) {
+            navigator.share({
+                title: title,
+                url: url
+            }).catch(console.error);
+        } else {
+            navigator.clipboard.writeText(url).then(function() {
+                alert('網址已複製到剪貼簿！');
+            }).catch(function() {
+                prompt('請複製以下網址：', url);
+            });
+        }
+    }
+    </script>
 </body>
 </html>
